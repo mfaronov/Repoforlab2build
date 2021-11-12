@@ -1,0 +1,5 @@
+[
+    {"desc":"Table","price":"200","imgPath":"/imgs/Table.jpg"},
+    {"desc":"Chair","price":"200","imgPath":"/imgs/Chair.jpg"},
+    {"desc":"Price","price":"200","imgPath":"/imgs/Price.jpg"}
+]
