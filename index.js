@@ -4,19 +4,13 @@ const newConnection = require('./DBConnection');
 
 const app = express();
 
+app.get('/Repoforlab2build', function(req, res) {
+    // do something here.
+  });
+
 // serve static contents
 app.use(express.static('static'));
 
-var router = express.Router();
-router.get('/Repoforlab2build', function (req, res) {
-    sql.connect(sqlConfig, function() {
-        var request = new sql.Request();
-        request.query('select * from Product', function(err, recordset) {
-            if(err) console.log(err);
-            res.end(JSON.stringify(recordset)); // Result in JSON format
-        });
-    });
-});
 
 // dynamic handling
 
