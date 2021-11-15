@@ -4,14 +4,14 @@ const newConnection = require('./DBConnection');
 
 const app = express();
 
-/*app.get('/Repoforlab2build', function(req, res) {
-        res.redirect('Repoforlab2build/static/index.html');
-      });*/
+app.get('/Repoforlab2build', function(req, res) {
+        res.send('Repoforlab2build/static/index.html');
+      });
 
-var path = require('path');
+//var path = require('path');
 // serve static contents
-app.use(express.static(path.join('static','Repoforlab2build')));
-//app.use(express.static('static'));
+//app.use(express.static(path.join('static','Repoforlab2build')));
+app.use(express.static('static'));
 
 // dynamic handling
 
