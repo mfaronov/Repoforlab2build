@@ -12,7 +12,7 @@ const app = express();
 // serve static contents
 //app.use(express.static(path.join('static','Repoforlab2build')));
 
-app.use(express.static('Repoforlab2build/static'));
+app.use(express.static('/Repoforlab2build/static'));
 
 // dynamic handling
 
