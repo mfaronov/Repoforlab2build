@@ -8,11 +8,11 @@ const app = express();
         res.send('Repoforlab2build/static/index.html');
       });*/
 
-//var path = require('path');
+var path = require('path');
 // serve static contents
-//app.use(express.static(path.join('static','Repoforlab2build')));
+app.use(express.static(path.join('static',__dirname)));
 
-app.use(express.static('/Repoforlab2build/static'));
+//app.use(express.static('static'));
 
 // dynamic handling
 
