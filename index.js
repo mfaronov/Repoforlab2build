@@ -16,7 +16,6 @@ app.get('/add-product', (req,res) => {
             ,(err,rows,fields) => {
                 res.redirect('/products');        
             } );
-
     conn.end();
 })
 
@@ -46,7 +45,7 @@ app.get('/products', (request, response) => {
             {
                 content += '<div>';
                 content += p.Description + ":" + p.Price 
-                content += ` <a href='/prod-img?path=${p.imgPath}&desc=${p.description}'> See Image</a>`
+                content += ` <a href='/prod-img?path=${p.imgPath}&desc=${p.Description}'> See Image</a>`
                 content += '</div>'
                 content += '\n';
             }

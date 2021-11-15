@@ -39,6 +39,14 @@ conn.query( `insert into Product values ("Table",200,"/imgs/Table.jpg")`
                     console.log('One row inserted');
             });
 
+conn.query( `insert into Product values ("Garbage",450,"/imgs/")`
+            , (err,rows,fields) => {
+                if (err)
+                    console.log(err);
+                else
+                    console.log('One row inserted');
+            });
+
 conn.query( `select * from Product `
             , (err,rows,fields) => {
                 if (err)
