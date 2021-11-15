@@ -5,7 +5,7 @@ const newConnection = require('./DBConnection');
 const app = express();
 
 app.get('/Repoforlab2build', function(req, res) {
-        res.redirect('/static/index.html');
+        res.redirect('Repoforlab2build/static/index.html');
       });
 
 // serve static contents
