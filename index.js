@@ -4,20 +4,13 @@ const newConnection = require('./DBConnection');
 
 const app = express();
 
-/*app.get('/Repoforlab2build', function(req, res) {
-        res.send('Repoforlab2build/static/index.html');
-      });*/
-
-      const router = express.Router();
-
-      router.get('/Repoforlab2build', (req, res) => {
-          res.sendFile('../static/index.html')
-      })
+app.get('/', function(req, res) {
+    res.render('index', {});
+ });
 
 //var path = require('path');
 // serve static contents
 //app.use(express.static(path.join('static',__dirname)));
-
 
 app.use(express.static('static'));
 
