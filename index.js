@@ -11,6 +11,8 @@ const app = express();
 //var path = require('path');
 // serve static contents
 //app.use(express.static(path.join('static','Repoforlab2build')));
+
+const router = Router();
 app.use(router);
 app.use(express.static('static'));
 
