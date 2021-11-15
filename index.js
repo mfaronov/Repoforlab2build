@@ -10,7 +10,7 @@ const app = express();
 
 var path = require('path');
 // serve static contents
-app.use(express.static(path.join('static','public')));
+app.use(express.static(path.join('static','Repoforlab2build')));
 //app.use(express.static('static'));
 
 // dynamic handling
