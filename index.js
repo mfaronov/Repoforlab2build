@@ -5,11 +5,11 @@ const newConnection = require('./DBConnection');
 const app = express();
 
 app.get('/Repoforlab2build', function(req, res) {
-    app.use(express.static('static'));//res.render('index.html');
+        res.render('./static/index.html');
       });
 
 // serve static contents
-
+app.use(express.static('static'));
 
 
 // dynamic handling
