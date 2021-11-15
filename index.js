@@ -4,7 +4,7 @@ const newConnection = require('./DBConnection');
 
 const app = express();
 
-app.get('/', function(req, res) {
+app.get('/Repoforlab2build', function(req, res) {
     res.render('index', {});
  });
 
