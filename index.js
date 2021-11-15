@@ -6,7 +6,7 @@ const app = express();
 
 app.get('/Repoforlab2build', function(req, res) {
     // do something here.
-  });
+
 
 // serve static contents
 app.use(express.static('static'));
@@ -60,6 +60,8 @@ app.get('/products', (request, response) => {
     })    
 
     conn.end();
+})
+
 })
 
 app.listen(80);
