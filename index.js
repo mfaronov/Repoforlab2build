@@ -11,7 +11,7 @@ const app = express();
 // serve static contents
 //app.use(express.static(path.join('static',__dirname)));
 
-app.use(express.static('./static/index.html'));
+app.use(express.static('./static'));
 
 // dynamic handling
 
